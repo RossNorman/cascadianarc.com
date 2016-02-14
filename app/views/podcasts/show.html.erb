@@ -4,7 +4,7 @@
 							<h1><%= @podcast.title %></h1>
 						<p class="description"><%= @podcast.description %></p>
 						<% unless @podcast.itunes.blank? %>
-						<a href="<%= @podcasts.itunes %>" class="subscribe_link">iTunes</a>
+						<a href="<%= @podcasts.itunes %>" class="subscribe_link">itunes</a>
 						<% end %>
 						<% unless @podcast.stitcher.blank? %>
 						<a href="<%= @podcasts.stitcher %>" class="subscribe_link">Sticher</a>
@@ -30,7 +30,7 @@
 							<li class="cf">
 								<div class="episode_thumbnail">
 									<a href="#">
-										<img src="images/ianheidt.png" alt"Ian Heidt">
+										<%= image_tag episode.episode_thumbnail.url(:medium) %>
 									</a>
 									</div>
 										<div class="episode_overview">
