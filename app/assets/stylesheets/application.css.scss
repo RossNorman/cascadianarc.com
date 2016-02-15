@@ -86,9 +86,15 @@ body {
 			li {
 				display: inline;
 				margin-left: 2.5rem;
+				position: relative;
 				a {
 					color: $beige;
 					text-decoration: none;
+					font-weight: 700;
+			          font-size: 0.9rem;
+			          &:hover {
+			            color: $highlight;
+			        }
 				}
 			}
 		}
@@ -114,6 +120,7 @@ body {
 
 .podcasts_banner {
 	background-image: image-url("podcasts-banner.jpg");
+	margin-bottom: 4rem;
 }
 .sign_in_banner {
 	background-image: image-url("sign-in-banner.jpg");
@@ -184,8 +191,14 @@ input[type="email"], input[type="text"], input[type="password"],
  }
 
  #form {
- 	padding: 0 5rem 0;
+ 	 padding: 3rem 3.5%;
+  background: $white;
+  border-radius: .35rem;
+  .title {
+    color: $dark;
+    text-align: center;
  }
+}
 
 @import 'normalize';
 @import 'welcome';

@@ -13,6 +13,8 @@
          <li class="current">Episodes</li>
         <li><%= link_to "New Episode", new_podcast_episode_path(@podcast) %></li>
         <li><%= link_to "Account Settings", edit_podcast_registration_path %></li>
+          <%= render 'layouts/header'; %>
+
         <li><%= link_to "View Podcast", podcast_path(current_podcast) %></li>
       </ul>
     </div>
@@ -39,16 +41,13 @@
               </li> 
             <% end %>
             </ul>
+                  
+
           </div>
         </div>
-</div>
-
-
       </div>
 
-      <div class="pagination">
-        <span class="previous_page disabled">Previous</span>
-        <em class="current">1</em>
-        <a href="#">2</a>
-        <a class="Next_page" href="#">Next</a>
-      </div>
+
+      
+
+      

@@ -5,10 +5,12 @@
   background-position: center;
   text-align: center;
 header {
+	color: $white;
 	padding: 3rem 0;
+
 	#logo {
 		float: left;
-		text-transform: none;
+		text-transform: uppercase;
 		font-weight: 700;
 		color: $darker;
 		text-decoration: none;
@@ -22,6 +24,7 @@ header {
 				li {
 					display: inline;
 					margin-left: 2.5rem;
+					position: relative;
 					a {
 						color: $beige;
 						text-decoration: none;
@@ -35,9 +38,12 @@ header {
 	font-size: 3.5rem;
 	font-weight: 300;
 	letter-spacing: 1px;
-	margin: 12rem 0 4rem 0 }
+	margin: 12rem 0 4rem 0; }
+	
 	.button {
 		margin: 1.5rem 1.5% 0 2.5%;
+		min-width: 130px;
+   		display: inline-block;
 	}
 }
 
